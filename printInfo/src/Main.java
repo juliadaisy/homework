@@ -33,10 +33,6 @@ class Human extends Mammal {
         return lastName + " " + firstName + ", " + (2023 - bornIn) + " years, " + gender;
     }
 
-    boolean equals(Human human) {
-        return this.firstName == human.firstName;
-    }
-
     void printIdentity() {
         String h = "==============";
         String s = lastName + " " + firstName + ", " + (2023 - bornIn) + " years, " + gender;
@@ -56,7 +52,5 @@ class Human extends Mammal {
     }
 }
 class Mammal {
-    void drinkMilk() {
-        System.out.println("НЯМ-НЯМ");
-    }
+
 }
