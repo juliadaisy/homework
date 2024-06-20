@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -19,8 +22,15 @@ public class Main {
         yulia.kiss(isliam);
         isliam.kiss(yulia);
 
+        //Human human07 = new Human();
+        //Human human08 = new Human();
+        //human07.firstName = "Jake";
+        //human08.firstName = "Jake";
+        System.out.println(isliam.equals(yulia));
+
     }
 }
+
 
 class Human extends Mammal {
     Integer bornIn;
@@ -32,7 +42,9 @@ class Human extends Mammal {
     public String toString() {
         return lastName + " " + firstName + ", " + (2023 - bornIn) + " years, " + gender;
     }
-
+    boolean equals(Human human){
+        return this.firstName == human.firstName;
+    }
     void printIdentity() {
         String h = "==============";
         String s = lastName + " " + firstName + ", " + (2023 - bornIn) + " years, " + gender;
