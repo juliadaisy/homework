@@ -1,18 +1,20 @@
 class UserDatabase {
     static Object[] u = new Object[10];
+    int i = 0;
 
-    void addFirst(Object o) {
-//    this.u = new Object[]{o} + u[];
-//        u[0] = o;
+    void addFirst(User user) {
+        for(int l=0; l<i; l++){
+              u[i-l] = u[i-l-1];
+        }
+        u[0] = user;
+        i++;
     }
 
     void addNext(User user) {
-        for (int i = 0; i < u.length; i++) {
-            if (u[i] == null) {
-                u[i] = user;
-                break;
-            }
-        }
+        //if (u[i] == null) {
+            u[i] = user;
+        //}
+        i++;
     }
 
     void search() {
