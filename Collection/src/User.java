@@ -3,15 +3,15 @@ class User {
     String lastName;
     int age;
 
-    User(String name, String surname, int age) {
-        this.firstName = name;
-        this.lastName = surname;
+    User(String firstName, String lastName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.age = age;
     }
 
-    public static void println(User user) {
-        System.out.println("First Name: " + user.firstName);
-        System.out.println("Last Name: " + user.lastName);
-        System.out.println("Age: " + user.age);
+    void println() {
+        System.out.println("First Name: " + firstName);
+        System.out.println("Last Name: " + lastName);
+        System.out.println("Age: " + age);
     }
 }

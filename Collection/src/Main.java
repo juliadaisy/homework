@@ -1,4 +1,6 @@
+import java.lang.reflect.Array;
 import java.util.*;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,8 +17,27 @@ public class Main {
         udb.addFirst(kate);
         udb.print();
         User will = new User("Will", "Smith", 50);
-        udb.addFirst(will);
+        udb.insert(will, 2);
         udb.print();
+        User nina = new User("Nina", "Fdd", 32);
+        udb.insert(nina, 1);
+        udb.print();
+        udb.getUser(4);
+        udb.remove(4);
+        udb.print();
+        udb.remove(1);
+        udb.print();
+        udb.addNext(julia);
+        udb.addNext(julia);
+        udb.addNext(julia);
+        udb.print();
+        udb.addFirst(isliam);
+        udb.print();
+
+        UserDatabase udb1 = new UserDatabase(2);
+        User jim = new User("Jim", "Tuna", 35);
+        udb1.addNext(jim);
+        udb1.print();
 
     }
 }
