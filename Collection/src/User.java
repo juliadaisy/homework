@@ -1,4 +1,4 @@
-class User {
+class User implements Print {
     String firstName;
     String lastName;
     int age;
@@ -9,7 +9,8 @@ class User {
         this.age = age;
     }
 
-    void println() {
+    @Override
+    public void print() {
         System.out.println("First Name: " + firstName);
         System.out.println("Last Name: " + lastName);
         System.out.println("Age: " + age);

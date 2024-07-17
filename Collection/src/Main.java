@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        UserDatabase udb = new UserDatabase();
+        Database udb = new Database();
         User julia = new User("Yulia", "Zav", 25);
         udb.addNext(julia);
         User isliam = new User("Isliam", "Bagirov", 24);
@@ -34,10 +34,22 @@ public class Main {
         udb.addFirst(isliam);
         udb.print();
 
-        UserDatabase udb1 = new UserDatabase(2);
+        Database udb1 = new Database(2);
         User jim = new User("Jim", "Tuna", 35);
         udb1.addNext(jim);
         udb1.print();
+
+        Database ub = new Database();
+        Auto mazda = new Auto("Red", "Mazda");
+        ub.addNext(mazda);
+        User teo = new User("Teo", "Din", 51);
+        ub.addNext(teo);
+        ub.print();
+
+
+
+
+
 
     }
 }
